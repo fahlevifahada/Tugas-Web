@@ -1,0 +1,277 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===================== */
+/*        NAVBAR         */
+/* ===================== */
+.navbar {
+    background: #003366;
+    color: white;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 45px;
+}
+
+.univ-name {
+    font-weight: bold;
+}
+
+.nav-menu a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* ===================== */
+/*         HERO          */
+/* ===================== */
+.hero {
+    height: 620px;
+    background: url("assets/fotouniv.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.date {
+    margin-bottom: 10px;
+}
+
+.desc {
+    margin-top: 12px;
+    color: #ddd;
+}
+
+/* ========================== */
+/*      TAUTAN PENTING        */
+/* ========================== */
+.links-section {
+    background: #002454;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.links-grid {
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.link-btn {
+    background: white;
+    color: #003366;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: block;
+}
+
+.link-btn:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+/* ========================== */
+/*        REKTOR CARD         */
+/* ========================== */
+.rektor-section {
+    padding: 60px 20px;
+}
+
+.rektor-card {
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.rektor-img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.rektor-text {
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rektor-text h2 {
+    margin-bottom: 1rem;
+}
+
+.rektor-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #003366;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ANGKA UNPATTI */
+.angka-section {
+    background: white; /* background putih sesuai permintaan */
+    text-align: center;
+    padding: 60px 20px;
+    color: #002454;
+}
+
+.angka-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.angka-date {
+    margin-top: 6px;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.angka-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.angka-item h2 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.angka-item p {
+    font-size: 15px;
+    color: #444;
+    margin-top: 6px;
+}
+
+.angka-btn {
+    margin-top: 35px;
+    padding: 12px 24px;
+    background: #003366;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.angka-btn:hover {
+    background: #0055aa;
+}
+
+/* ========================= */
+/*       MENU BAWAH          */
+/* ========================= */
+
+.bottom-menu {
+    background: #003366;       
+    padding: 30px 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-btn {
+    background: white;
+    color: #002a5c;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.25s;
+}
+
+.menu-btn:hover {
+    background: #ffdd00;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+/* ========================== */
+/*          FOOTER            */
+/* ========================== */
+.footer {
+    background: #002454;
+    color: white;
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 14px;
+}
+
+
+.footer-right img:hover {
+    color: white;
+}
+
+
