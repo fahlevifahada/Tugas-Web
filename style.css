@@ -6,6 +6,46 @@
     font-family: Arial, sans-serif;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===================== */
+/*        TOPBAR         */
+/* ===================== */
+/* TOPBAR */
+.topbar {
+    background: #002a5c;
+    color: white;
+    padding: 6px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+}
+
+.topbar-left span {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.topbar-right a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.topbar-right a img:hover {
+    transform: scale(1.7);
+    opacity: 0.7;
+}
+
+
+
 /* ===================== */
 /*        NAVBAR         */
 /* ===================== */
@@ -16,12 +56,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .nav-left {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.nav-left:hover {
+    cursor: pointer;
 }
 
 .logo {
@@ -33,10 +80,17 @@
 }
 
 .nav-menu a {
-    margin: 0 12px;
+    margin: 0px 12px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition: background 0.18s ease;
+}
+
+.nav-menu a:hover {
+    cursor: pointer;
+    background-color: grey;
 }
 
 /* ===================== */
@@ -102,15 +156,18 @@
 .link-btn {
     background: white;
     color: #003366;
+    text-decoration: none;
     padding: 12px;
     border-radius: 6px;
     font-weight: 600;
     display: block;
+    transition: transform 0.5s ease, background 0.25s ease;
 }
 
 .link-btn:hover {
     cursor: pointer;
     background-color: yellow;
+    transform: scale(1.04);
 }
 
 /* ========================== */
@@ -205,11 +262,14 @@
     font-weight: bold;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
+    transition: transform 0.5s ease, background 0.25s ease;
 }
 
 .angka-btn:hover {
     background: #0055aa;
+    transform: scale(1.04);
+    cursor: pointer;
+    
 }
 
 /* ========================= */
@@ -240,13 +300,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: 0.25s;
+    transition: transform 0.5s ease, background 0.25s ease;
 }
 
 .menu-btn:hover {
     background: #ffdd00;
+    transform: scale(1.04);
     cursor: pointer;
 }
+
 
 .icon {
     font-size: 18px;
@@ -267,14 +329,21 @@
     font-size: 14px;
 }
 
-.footer-right {
-    display: flex;
-    gap: 14px;
+.footer-right img {
+    width: 26px;        
+    height: 26px;
+    object-fit: contain;
+    padding: 5px;
+    display: inline-block;
+    transition: transform 0.2s, opacity 0.2s;
 }
-
 
 .footer-right img:hover {
-    color: white;
+    transform: scale(1.7);
+    opacity: 0.7;
 }
+
+
+
 
 
